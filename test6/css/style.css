@@ -1,0 +1,168 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+	
+}
+.container1{  //水平分栏
+	width:100%;
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+#one{  // 标准盒子模型
+	width: 300px;
+	height:300px;
+	background-color: #DDD;
+	float: left;
+	padding:0 20px;
+}
+.box1{
+	width:200px;
+	height: 200px;
+	padding:30px;
+	margin:15px auto;
+	border:5px solid #666;
+}
+.content1{
+	width:200px;
+	height:200px;
+	background-color: #CCC;
+	text-align: center;
+	line-height: 200px;
+}
+
+#two{  //怪异盒子模型
+	width: 300px;
+	height:300px;
+	background-color: #DDD;
+	float: left;
+	margin-left: 60px;
+	padding:0 20px;
+}
+.box2{
+	width:200px;
+	height: 200px;
+	padding:30px;
+	margin:35px auto;
+	border:5px solid #666;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.content2{
+	width:130px;//200-60-10
+	height: 130px;
+	background-color: #CCC;
+	text-align: center;
+	line-height: 200px;
+}
+#three{
+	width: 600px;
+	height:300px;
+	margin:0 10px;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	box-pack:center;
+	-moz-box-pack:center;
+	-webkit-box-pack:center;
+	box-align:center;
+	-moz-box-align:center;
+	-webkit-box-align:center;
+	background-color: #DDD;
+	float: right;
+}
+.box3{
+	width:200px;
+	height: 200px;
+	display: box;
+	display: -moz-box;
+	display: -webkit-box;
+	box-pack:center;
+	-moz-box-pack:center;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	box-align:center;
+	border:5px solid #666;
+}
+.content3{
+	clear: both;
+	width:100px;
+	height: 100px;
+	background-color: #CCC;
+	text-align: center;
+	line-height: 30px;
+}
+.hr{
+	clear: both;
+}
+.container2{
+	width:100%;
+	display: flex;
+	display: -webkit-flex;
+	padding-top: 15px;
+	
+}
+.flex1{
+	width:300px;
+	height:280px;
+	background-color: #ddd;
+	-webkit-flex:3;
+	flex:3;
+	display: -webkit-flex;
+	-webkit-order:1;
+	order:1;
+	display: flex;
+	-webkit-justify-content:center;
+	justify-content:center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.flex2{
+	background-color:#ddd;
+	width:300px;
+	height:280px;
+	flex:3;
+	-webkit-flex:3;
+	-webkit-order:3;
+	order:3;
+	flex-direction:column;
+	-webkit-flex-direction:column;
+}
+.flex2 div{
+	width:100px;
+	height:50px;
+	margin:0 auto;
+	margin-top: 10px;
+	background-color: #fff;
+	border:1px solid #666;
+	text-align: center;
+	line-height:50px;
+
+}
+.flex3{
+	width:600px;
+	height:260px;
+	background-color: #ddd;
+	overflow: hidden;
+	margin:0 10px;
+	-webkit-flex:4;
+	flex:4;
+	-webkit-order:2;
+	order:2;
+	column-count:2;
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	column-gap:3em;
+	-webkit-column-gap:3em;
+	-moz-column-gap:3em;
+	column-rule:1px solid #fff;
+	-webkit-column-rule:1px solid #fff;
+	-moz-column-rule:1px solid #fff;
+	color:#999;
+	font-size: 14px;
+	text-align: center;
+	line-height: 20px;
+	padding:10px;
+}
